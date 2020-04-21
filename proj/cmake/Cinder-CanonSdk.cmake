@@ -18,6 +18,8 @@ if(NOT TARGET Cinder-CanonSdk)
     # Notice that `cinderblock.xml` has `<includePath>src</includePath>`.
     # So you need to set `../../src/` to include.
     target_include_directories(Cinder-CanonSdk PUBLIC "${Cinder-CanonSdk_PROJECT_ROOT}/src" )
+    target_include_directories(Cinder-CanonSdk PUBLIC "${Cinder-CanonSdk_PROJECT_ROOT}/include" )
+
     target_include_directories(Cinder-CanonSdk SYSTEM BEFORE PUBLIC "${CINDER_PATH}/include" )
     target_include_directories(Cinder-CanonSdk SYSTEM BEFORE PUBLIC "${Cinder-CanonSdk_PROJECT_ROOT}/lib/EDSDK/Header" )
 
